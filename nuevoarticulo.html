@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Nuevo Articulo </title>
 </head>
 
+
 <body>
-    <nav class="menu">
+    <div class="navbar">
         <ul>
             <li><a href="index.html">Inicio </a></li>
             <li><a href="nuevousuario.html">Nuevo Usuario </a></li>
@@ -17,30 +19,27 @@
             <li><a href="nuevoarticulo.html">Nuevo Articulo </a></li>
             <li><a href="consultarArticulo.html">Consultar Articulo </a></li>
         </ul>
-    </nav>
-
+    </div>
     <div class="formulario">
+        <h2>Formulario de Registro</h2>
+        <form action="#" method="post">
+            <input type="text" id="nombre" name="nombre" class="controls" placeholder="Nombre"><br><br>
 
-        <body>
-            <h2>Formulario de Registro</h2>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br><br>
+            <p>Género:</p>
+            <br>
+            <div class="controls-radio">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="genero" value="Hombre" class="controls">
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="genero" value="Mujer" class="controls">
+            </div>
 
-                <label>Género:</label><br>
-                <input type="radio" id="hombre" name="genero" value="Hombre">
-                <label for="hombre">Hombre</label><br>
-                <input type="radio" id="mujer" name="genero" value="Mujer">
-                <label for="mujer">Mujer</label><br><br>
+            <input type="text" id="email" name="email" class="controls" placeholder="Email"><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br><br>
+            <input type="password" id="password" name="password" class="controls" placeholder="Contraseña"><br><br>
 
-                <label for="password">Contraseña:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-
-                <input type="submit" value="Guardar">
-            </form>
+            <input class="botons" type="submit" value="Guardar">
+        </form>
     </div>
 </body>
 
